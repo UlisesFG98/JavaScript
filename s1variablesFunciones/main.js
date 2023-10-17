@@ -21,15 +21,8 @@ function esParOImpar(numero) {
     }
   }
   
-  let numeroIngresado = prompt("Por favor, ingrese un número:");
-  let numero = parseInt(numeroIngresado);
-  
-  if (!isNaN(numero))
-   { 
-    let resultado = esParOImpar(numero);
-    console.log(`El número ${numero} es ${resultado}.`);
-  } 
-  else {
-    console.log("Por favor, ingrese un número válido.");
-  }
+  // Ejemplo de uso:
+  let numero = 5;
+  let resultado = esParOImpar(numero);
+  console.log(`El número ${numero} es ${resultado}.`);
   
