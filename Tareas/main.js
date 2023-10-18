@@ -1,24 +1,40 @@
-function palabrasNuevas(palabra) {
+function palabrasNuevas(letra) {
     let palabraNon = '';
     let palabraPar = '';
   
-    for (let i = 0; i < palabra.length; i++) {
+    for (let i = 0; i < letra.length; i++) {
       if (i % 2 === 0) {
-        palabraPar += palabra[i];
+        palabraPar += letra[i];
       } else {
-        palabraNon += palabra[i];
+        palabraNon += letra[i];
       }
     }
   
     return [palabraNon, palabraPar];
-  }
+}
+let palabraOriginal = "onomatopeya";
+let [palabraNon, palabraPar] = palabrasNuevas(palabraOriginal); 
+/*devuelve un array con dos elementos, 
+donde el primer elemento es la palabra con las letras en posiciones non y el segundo elemento es la palabra 
+con las letras en posiciones par.*/
   
-  let palabraOriginal = "Ulises";
-  let [palabraNon, palabraPar] = palabrasNuevas(palabraOriginal); 
-  /*devuelve un array con dos elementos, 
-  donde el primer elemento es la palabra con las letras en posiciones non y el segundo elemento es la palabra 
-  con las letras en posiciones par.*/
-  
-  console.log("Palabra con letras en posición non: " + palabraNon);
-  console.log("Palabra con letras en posición par: " + palabraPar);
+console.log("Palabra con letras en posición non: " + palabraNon);
+console.log("Palabra con letras en posición par: " + palabraPar);
+
+
+/*Ejercicios*/
+function caracteresNombre(texto, numero) {
+    numero > texto.length ? "Error: El número excede la cantidad de caracteres del texto." : forFunction(texto, numero)
+}
+
+function forFunction(texto, numero){
+    let subcadena = "";
+    for (let i = 0; i <= numero; i++) {
+    subcadena += texto[i];
+    }
+    console.log(subcadena);
+}
+
+caracteresNombre("israel", 3);
+
   
