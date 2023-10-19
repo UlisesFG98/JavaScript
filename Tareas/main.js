@@ -37,4 +37,28 @@ function forFunction(texto, numero){
 
 caracteresNombre("israel", 3);
 
+/*Ejercicios 2*/  
+function contarLongitudes(texto) {
+    let palabras = texto.split(' ');  // Divide el texto en palabras
+  
+    let pares = 0;
+    let nones = 0;
+  
+    palabras.forEach(palabra => {
+      const longitud = palabra.length;
+      if (longitud % 2 === 0) {
+        pares++;
+      } else {
+        nones++;
+      }
+    });
+  
+    return { pares, nones };
+  }
+  
+  let texto = "La mejor forma de predecir el futuro es creándolo";
+  let resultado = contarLongitudes(texto);
+  
+  console.log("-pares:", resultado.pares);
+  console.log("-nones:", resultado.nones);
   
