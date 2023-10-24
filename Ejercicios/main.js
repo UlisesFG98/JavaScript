@@ -88,6 +88,29 @@ let generacion12 = KodersPorGeneracion(koders, 12);
 console.log("Generación 1: " + generacion1 + " koder(s)");
 console.log("Generación 9: " + generacion9 + " koder(s)");
 console.log("Generación 12: " + generacion12 + " koder(s)");
+
+//////FUNCIONES FLECHA
+
+function getTriangleArea(base, height) {
+  let area = (base * height) / 2;
+  return area;
+}
+
+function checkIfIsEven(number) {
+  let result = number % 2 === 0;
+  return result;
+}
+
+function getRandomKoder(kodersArray) {
+  let number = Math.floor(Math.random() * kodersArray.length);
+  let koder = kodersArray[number];
+  return koder;
+}
+
+const getTriangleArea = (base, height) => (base * height) / 2;
+const checkIfIsEven = (number) => number % 2 === 0;
+const getRandomKoder = (kodersArray, number) => { (number = Math.floor (Math.random()) * kodersArray.length);(koders = kodersArray[number]); return koder}
+
           
 
 
